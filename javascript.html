@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2</title>
+    <script type="text/javascript" src="bond.json"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+      
+	/////// LAB EXERCISES 2 //////////
+
+
+	// Our JavaScript Object (NOTE: This is not JSON), which has 3 name value pairs
+	// The Year can be delared as a string or as an int (quotes or without)
+	var car = {
+	  "make": "Skoda",
+	  "model": "Octavia",
+	  "year": 2007 
+	};
+
+	// NOTE: Changes are lost when hard coding values into JConsole 
+	console.log(JSON.stringify(car)); // Object Car to string text
+	document.write("Car Make is " + car.make + "<br>" + "Model is " + car.model + "<br>" + "Year is " + car.year);
+
+
+	// Create a variable called jsonObject in the JavaScript code that is an empty string delimited by single quotes?
+	// NOTE: Watch the syntax for this JSON code!! 
+	var jsonObject = {
+	  "name": "Barky",
+	  "breeds": ["labrador", "collie", "springer"]
+	};
+
+	// Create a variable called jsonText, which is the return(OF A FUNCTION) value of JSON.stringify called with jsonObject as an argument.
+	var jsonText = JSON.stringify(jsonObject); // Object to String
+	
+	// NOTE: Check all is working in JConsole
+	
+      
+  </script>
+    
+</body>
+</html> 
